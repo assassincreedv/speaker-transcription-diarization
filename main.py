@@ -11,7 +11,7 @@ model = AutoModel(
 
 if __name__ == '__main__':
     res = model.generate(
-        input=f"/Users/xiaosonghu/Repo/FunASR/examples/industrial_data_pretraining/sense_voice/audio.wav",
+        input=f"/home/xiaosong/speaker-transcription-diarization/videoplayback.mp3",
         language="auto",
 
     )
