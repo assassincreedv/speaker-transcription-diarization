@@ -5,10 +5,10 @@ import os
 from utils import download_audio, process_audio
 
 model = AutoModel(
-    model="speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
-    vad_model="speech_fsmn_vad_zh-cn-16k-common-pytorch",
-    punc_model="punc_ct-transformer_zh-cn-common-vocab272727-pytorch",
-    spk_model="speech_campplus_sv_zh-cn_16k-common",
+    model="iic/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
+    vad_model="iic/speech_fsmn_vad_zh-cn-16k-common-pytorch",
+    punc_model="iic/punc_ct-transformer_zh-cn-common-vocab272727-pytorch",
+    spk_model="ii/speech_campplus_sv_zh-cn_16k-common",
     device="cuda:0",
     batch_size=5
 )
