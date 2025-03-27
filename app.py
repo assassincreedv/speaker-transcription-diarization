@@ -36,9 +36,9 @@ def start_mq_consumer():
 
 if __name__ == "__main__":
     # 开启 MQ 监听线程
-    mq_thread = threading.Thread(target=start_mq_consumer)
-    mq_thread.daemon = True
-    mq_thread.start()
+    # mq_thread = threading.Thread(target=start_mq_consumer)
+    # mq_thread.daemon = True
+    # mq_thread.start()
 
     # 启动 Flask
     app.run(host="0.0.0.0", port=8000, debug=True)
