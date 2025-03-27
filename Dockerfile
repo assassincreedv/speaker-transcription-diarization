@@ -25,7 +25,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # 7. 暴露端口
-EXPOSE 8001
+EXPOSE 8000
 
 # 8. 启动命令（自动运行 Flask）
 CMD ["python", "app.py"]
